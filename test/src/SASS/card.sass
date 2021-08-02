@@ -1,0 +1,54 @@
+.flex-def
+    display: flex
+    
+.card-wrap
+    @extend .flex-def
+    flex-direction: column
+    justify-content: space-between
+    user-select: none
+    cursor: pointer
+    border-radius: 8px
+    background-color: #fff
+    min-width: 12.85rem
+    height: 8.1rem
+    &+.card-wrap
+        margin-left: 0.75rem
+
+.card-title-wrap
+    @extend .flex-def
+    justify-content: space-between
+    padding: 0.8rem  0  0    0.75rem
+
+.card-cost-wrap
+    color: #B5F968
+    letter-spacing: 2px
+    text-shadow: 1px 1px 0 #6E9143
+    line-height: 1.4rem
+    font-weight: 500
+
+.card-order-number
+    letter-spacing: -0.408px
+    color: #000000
+    font-weight: 500
+    font-size: 1.1rem
+    line-height: 1.4rem
+
+.card-counting-goods
+    font-family: Fira Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 0.9rem
+    line-height: 1.1rem
+    letter-spacing: -0.408px
+    color: #888E99
+    padding:  0   0.75rem 0.6rem
+
+.order-list-title
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 1.25rem 1rem 0.75rem
+    .title
+        font-size: 1.5rem
+        font-family: "Fira Sans"
+        font-weight: 500
